@@ -1,24 +1,44 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+JWT & Shortener APIs
 
-Things you may want to cover:
+##### Prerequisites
 
-* Ruby version
+The setups steps expect following tools installed on the system.
 
-* System dependencies
+- Ruby '2.5.3'
+- Rails '~> 6.0.6', '>= 6.0.6.1'
 
-* Configuration
+##### 1. Check out the repository
 
-* Database creation
+```bash
+git clone git@github.com/peterprabu/my_api.git
+```
 
-* Database initialization
+##### 2. Create and setup the database
 
-* How to run the test suite
+Run the following commands to create and setup the database.
 
-* Services (job queues, cache servers, search engines, etc.)
+```ruby
+rails db:create
+rails db:migrate
+```
 
-* Deployment instructions
+##### 3. Start the Rails server
 
-* ...
+You can start the rails server using the command given below.
+
+```ruby
+rails s
+```
+
+##### 4. Postman APIs
+
+```Endpoints
+/signup
+/login
+/shorten
+/:shorten_url
+```
+
+
