@@ -15,7 +15,15 @@ The setups steps expect following tools installed on the system.
 git clone git@github.com/peterprabu/my_api.git
 ```
 
-##### 2. Create and setup the database
+##### 2. Install GEMs
+
+Run the following commands to install packages
+
+```ruby
+bundle install
+```
+
+##### 3. Create and setup the database
 
 Run the following commands to create and setup the database.
 
@@ -24,7 +32,7 @@ rails db:create
 rails db:migrate
 ```
 
-##### 3. Start the Rails server
+##### 4. Start the Rails server
 
 You can start the rails server using the command given below.
 
@@ -32,7 +40,7 @@ You can start the rails server using the command given below.
 rails s
 ```
 
-##### 4. Postman APIs
+##### 5. Postman APIs
 
 ```Endpoints
 /signup
